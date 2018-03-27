@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sanskaar.shalini.mykindergarten.LearnShapes"
+    android:background="@drawable/kindergartenbg">
+
+   <ImageView
+       android:id="@+id/circle"
+       android:src="@drawable/cir"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:onClick="shapeSelected"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewshapes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-9491490870756061/3467092981">
+    </com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/adViewshapes"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/adViewshapes"
+        android:layout_marginTop="19dp"
+        app:srcCompat="@drawable/rec"
+        android:onClick="shapeSelected"/>
+
+    <ImageView
+        android:id="@+id/triangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rectangle"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/tri"
+        android:onClick="shapeSelected"/>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rectangle"
+        android:layout_alignStart="@+id/rectangle"
+        android:layout_alignTop="@+id/triangle"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        app:srcCompat="@drawable/sta"
+        android:onClick="shapeSelected"/>
+
+ <ImageView
+     android:id="@+id/square"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/adViewshapes"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentStart="true"
+     app:srcCompat="@drawable/sqa"
+     android:onClick="shapeSelected"/>
+
+    <ImageView
+        android:id="@+id/oval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/star"
+        android:layout_alignStart="@+id/star"
+        android:layout_alignTop="@+id/square"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        app:srcCompat="@drawable/ova"
+        android:onClick="shapeSelected"/>
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/star"
+        android:layout_marginTop="13dp"
+        android:layout_toLeftOf="@+id/oval"
+        android:layout_toStartOf="@+id/oval"
+        android:onClick="shapeSelected"
+        app:srcCompat="@drawable/har" />
+</RelativeLayout>

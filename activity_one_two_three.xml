@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kindergartenbg"
+    tools:context="com.sanskaar.shalini.mykindergarten.OneTwoThree">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout123"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/onestar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textColor="@color/one"
+                android:textSize="60sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:onClick="numberSelected"/>
+
+            <TextView
+                android:id="@+id/twostars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:textColor="@color/two"
+                android:textSize="60sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:onClick="numberSelected"/>
+
+            <TextView
+                android:id="@+id/threestars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:textColor="@color/three"
+                android:textSize="60sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:onClick="numberSelected"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout456"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/fourstars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:textColor="@color/four"
+                android:textSize="60sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:onClick="numberSelected"/>
+            <TextView
+                android:id="@+id/fivestars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:textColor="@color/five"
+                android:textSize="60sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:onClick="numberSelected"/>
+
+            <TextView
+                android:id="@+id/sixstars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6"
+                android:textColor="@color/six"
+                android:textSize="60sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:onClick="numberSelected"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout789"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/sevenstars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textColor="@color/seven"
+                android:textSize="60sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:onClick="numberSelected"/>
+
+            <TextView
+                android:id="@+id/eightstars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="8"
+                android:textColor="@color/eight"
+                android:textSize="60sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:onClick="numberSelected"/>
+            <TextView
+                android:id="@+id/ninestars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="9"
+                android:textColor="@color/nine"
+                android:textSize="60sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:onClick="numberSelected"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout10"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/imageViewExtra1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="y"
+                android:visibility="invisible"/>
+
+
+            <TextView
+                android:id="@+id/tenstars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10"
+                android:textColor="@color/ten"
+                android:textSize="60sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:onClick="numberSelected"/>
+            <TextView
+                android:id="@+id/imageViewExtra2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayoutad"
+            android:layout_weight="1">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-9491490870756061/3467092981">
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

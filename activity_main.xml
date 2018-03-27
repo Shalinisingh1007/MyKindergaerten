@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sanskaar.shalini.mykindergarten.MainActivity"
+    android:background="@drawable/kindergartenbg">
+
+
+        <ImageButton
+            android:id="@+id/imageButtonabcd"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/alphabetseng"
+
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton123"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/imageButtonColors"
+            android:layout_below="@id/imageButtonabcd"
+            android:layout_above="@id/imageButtonshapes"
+            android:layout_margin="30dp"
+            android:background="@drawable/numbers" />
+
+        <ImageButton
+            android:id="@+id/imageButtonColors"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/imageButtonabcd"
+            android:layout_above="@+id/imageButtonshapes"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/colours" />
+
+        <ImageButton
+            android:id="@+id/imageButtonshapes"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_above="@id/adView"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/shape" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-9491490870756061/3467092981">
+        </com.google.android.gms.ads.AdView>
+
+
+
+
+
+</RelativeLayout>

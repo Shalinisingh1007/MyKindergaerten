@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kindergartenbg"
+    tools:context="com.sanskaar.shalini.mykindergarten.LearnColors">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <ImageView
+            android:id="@+id/green"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/green"
+            android:onClick="colorSelected"/>
+
+        <ImageView
+            android:id="@+id/pink"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/pink"
+            android:onClick="colorSelected"/>
+
+        <ImageView
+            android:id="@+id/brown"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/brown"
+            android:onClick="colorSelected"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <ImageView
+            android:id="@+id/yellow"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/yellow"
+            android:onClick="colorSelected"/>
+
+        <ImageView
+            android:id="@+id/orange"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/orange"
+            android:onClick="colorSelected"/>
+
+        <ImageView
+            android:id="@+id/purple"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/purple"
+            android:onClick="colorSelected"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <ImageView
+                android:id="@+id/black"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/black"
+                android:onClick="colorSelected"/>
+
+            <ImageView
+                android:id="@+id/red"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/red"
+                android:onClick="colorSelected"/>
+            <ImageView
+                android:id="@+id/blue"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/blue"
+                android:onClick="colorSelected"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-9491490870756061/3467092981">
+            </com.google.android.gms.ads.AdView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
